@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+        body{
+            font-family: sans-serif;
+            font-style: italic;
+        }
+
+        fieldset{
+            background-color: lightblue;
+        }
+
+        h1{
+            text-align: center;
+        }
+    </style>
+    <title>Reserva de pista</title>
+</head>
+<body>
+  <body>
+    <h1>Formulario de satisfacción</h1>
+    <form method="GET">
+        <!-- Datos personales -->
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="apellidos"> Apellidos: </label>
+            <input type="text" name="apellidos" id="apellidos" size="70">
+            <br>
+            <label for="nombre"> Nombre: </label>
+            <input type="text" name="nombre" id="nombre" size="40">
+            <br>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" size="40">
+            <br>
+            <label for="contrasenna">Contraseña: </label>
+            <input type="password" name="password" id="password" size="20">
+            <br>
+            <label for="fechnac">Fecha de nacimiento: </label>
+            <input type="date">
+            <br>
+        </fieldset>
+
+        <!-- Deporte -->
+        <fieldset>
+            <legend>Deporte</legend>
+            <div>¿Qué deporte prefieres practicar?</div>
+            <input type="radio" name="deporte" id="deporte"value="futbol"> Fútbol </input>
+            <br>
+            <input type="radio" name="deporte" id="deporte" value="padel"> Padel </input>
+        </fieldset>
+
+        <!-- Horario de reserva -->
+        <fieldset>
+            <legend> Hora de reserva</legend>
+            <div> Selecciona un horario</div>
+            <label type="horario" name="horario">
+            <select>
+                <option name="17.00" value="horario"> 17.00</option>
+                <option name="18.00" value="horario"> 18.00</option>
+                <option name="19.00" value="horario"> 19.00</option>
+                <option name="20.00"value="hoario"> 20.00</option>
+            </select>
+        </fieldset>
+
+        <!-- Otros servicios -->
+        <fieldset>
+            <legend>Otros servicios</legend>
+            <div>¿Qué servicios adicionales deseas reservar?</div>
+            <input type="checkbox" name="vestuarios">Vestuarios</input>
+            <br>
+            <input type="checkbox" name="toallas">Toallas</input>
+            <br>
+            <input type="checkbox" name="bebidas">Bebidas isotónicas</input>
+            <br>
+            <input type="checkbox" name="pelotas">Pelotas/Balón</input>
+            <br>
+        </fieldset>
+
+        <!-- Comentarios adicionales -->
+        <fieldset>
+            <legend>Comentarios adicionales</legend>
+            <div>Deja tus comentarios sobre el módulo profesional:</div>
+            <input type="textarea" rows="5" cols="60" placeholder="Escribe tus comentarios aqui...">
+        </fieldset>
+
+        <!-- Valoración -->
+        <fieldset>
+            <legend>Valoración</legend>
+            <div>Valoración  de satisfacción:</div>
+            <label for="1">1</label>
+            <input type="radio" name="1">
+            <label for="2">2</label>
+            <input type="radio" name="2">
+            <label for="3">3</label>
+            <input type="radio" name="3">
+            <label for="4">4</label>
+            <input type="radio" name="4">
+            <label for="5">5</label>
+            <input type="radio" name="5">
+        </fieldset>
+        <button type="reservar" name="reserva">Reservar</button>
+        <button type="reset" name="reset"> Resetear</button>
+        <br/>
+      </form>
+
+    <section class="volver">
+        <a href="../paginas/trabajos.html">
+            <button>Volver </button>
+        </a>
+    </section>
+
+  </body>
+</html>

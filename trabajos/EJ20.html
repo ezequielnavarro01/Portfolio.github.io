@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mi encuenta de satisfaccion</title>
+</head>
+<body>
+	<h2>Encuenta de satisfacción</h2>
+	<fieldset>
+		<legend>Datos personales</legend>
+		<table>
+			<tr>
+				<td>
+					<label for="apellidos">Apellidos:</label>
+				</td>
+				<td>
+					<input type="apellidos" name="apellidos" size="50" placeholder="Escriba aqui sus apellidos" required/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="nombre">Nombre:</label>
+				</td>
+				<td>
+					<input type="nombre" name="nombre" size="50" placeholder="Escriba aqui su nombre" required/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="email">Email:</label>
+				</td>
+				<td>
+					<input type="email" name="email" size="50" placeholder="Escriba aqui su email" required/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="fechadenacimiento">Fecha de nacimiento:</label>
+				</td>
+				<td>
+					<input type="date">
+				</td>
+			</tr>
+		</table>
+	</fieldset>
+	<fieldset>
+		<legend>Conocimientos previos</legend>
+	  		<label class="pregunta">¿Conocías HTML?</label><br>		
+			<input type="radio" id="si" name="html" value="si"/>
+			<label for="si">Sí</label><br>
+			<input type="radio" id="no" name="html" value="no"/>
+			<label for="no">No</label>
+	</fieldset>
+	<fieldset>
+		<legend>Propuestas</legend>
+			<label class="pregunta">¿Que cambiarias del ciclo formativo</label><br>
+			<input type="checkbox" id="cambio1" name="cambio1" value="P">
+			<label for="cambio1">Profesorado</label><br>
+			<input type="checkbox" name="cambio2" name="cambio2" value="T">
+			<label for="cambio2">Temario</label><br>
+			<input type="checkbox" name="cambio3" name="cambio3" value="E">
+			<label for="cambio3">Equipos</label><br>
+			<input type="checkbox" name="cambio4" name="cambio4" value="H">
+			<label for="cambio4">Horario</label><br>
+	</fieldset>
+	<fieldset>
+		<legend>Nivel de dificultad</legend>
+		<label class="pregunta">¿Cual ha sido para ti el nivel de dificultad?</label><br>
+		<select name="dificultad" id="dificultad" required>
+			<option value="0">0</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+		</select>
+	</fieldset>
+	<fieldset>
+	  		<legend>Documentación aportada</legend>
+	  		<table>
+	  			<tr>
+	  				<td>
+	  					<label for="foto">Foto</label><input type="file" name="foto" >
+	  					<br/>
+	  					<br/>
+	  				</td>
+	  			</tr>
+	  			<tr>
+	  				<td>
+	  					<label for="descripcion" class="pregunta">¿Qué documentación has aportado?</label>
+	  				</td>
+	  			</tr>
+	  			<tr>
+	  				<td>	  					
+	  					<textarea cols="60" rows="5" name="descripcion" placeholder="Escriba aquí la descripcion del archivo adjunto" ></textarea>
+	  				</td>
+	  			</tr>
+	  		</table>
+	  	</fieldset>
+	  	<fieldset>
+	  		<legend>Color favorito</legend>
+	  		<p class="pregunta">¿Cual es tu color favorito?</p>
+	  		<input type="color">
+	  	</fieldset>
+	  	<fieldset>
+	  		<legend>Grado de realizacion del curso</legend>
+	  		<p class="pregunta">¿Cuanto has avanzado en el curso?</p>
+	  		<input type="range">
+	  	</fieldset>
+
+	  	<input type="submit" name="enviar" id="enviar">
+	  	<input type="reset" name="resetear" id="resetear">
+
+	<section class="volver">
+		<a href="../paginas/trabajos.html">
+			<button>Volver </button>
+		</a>
+	</section>
+
+	</body>
+</html>

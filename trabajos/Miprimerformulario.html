@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mi primer formulario</title>
+</head>
+<body>
+	<h1> Este es mi formulario</h1>
+	<form action="#" method="GET">
+		<table border="1">
+			<tr>
+				<td><label for="camponombre">Nombre:</label></td>
+				<td><input id="camponombre" type="text" name="NOMBRE"/></td>
+			</tr>
+			<tr>
+				<td><label for="campoapellido1">Primer Apellido:</label></td>
+				<td><input id="campoapellido1" type="text" name="APELLIDO1"/></td>
+			</tr>
+			<tr>
+				<td><label for="campoapellido2">Segundo Apellido:</label></td>
+				<td><input id="campoapellido2" type="text" name="APELLIDO2"/></td>
+			</tr>
+		</table>
+
+		<input type="radio" id="html" name="fav_language" value="HTML">
+		<label for="html">HTML</label><br>
+		<input type="radio" id="css" name="fav_language" value="CSS">
+		<label for="css">CSS</label><br>
+		<input type="radio" id="javascript" name="fav_language" value="JavaScript">
+		<label for="javascript">JavaScript</label>
+		<br></br>
+
+		<label for="cars">Escoge un coche:</label>
+		<select name="cars" id="cars">
+		  <option value="volvo">Volvo</option>
+		  <option value="saab">Saab</option>
+		  <option value="mercedes">Mercedes</option>
+		  <option value="audi">Audi</option>
+		</select>
+		<br></br>
+
+		<form action="/action_page.php">
+		  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+		  <label for="vehicle1"> Tengo bicicleta</label><br>
+		  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+		  <label for="vehicle2"> Tengo coche</label><br>
+		  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+		  <label for="vehicle3"> Tengo barco</label><br><br>
+		  <input type="submit" value="Submit">
+		</form>
+		<br></br>
+
+		<input type="submit" value="Guardar"/>
+	</form>
+
+	<section class="volver">
+		<a href="../paginas/trabajos.html">
+			<button>Volver </button>
+		</a>
+	</section>
+
+</body>
+</html>
