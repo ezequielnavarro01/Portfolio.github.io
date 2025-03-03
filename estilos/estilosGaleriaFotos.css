@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#botones {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#botones button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.botonActivo {
+    background-color: #096a00;
+    color: white;
+    transform: scale(1.05);
+}
+
+.tema-claro {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border: 2px solid #096a00;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+#galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.imagenGaleria {
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    height: 200px;
+}
+
+.imagenGaleria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.imagenGaleria img:hover {
+    transform: scale(1.2);
+}
+
+.imagenGaleria p {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    margin: 0;
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 14px;
+    border-radius: 5px;
+}
